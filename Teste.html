@@ -1,6 +1,10 @@
+<!DOCTYPE HTML>
 <html>
 				<head>
 								<title>Teste HTML</title>
+								
+								<meta charset="UTF-8">
+								<meta name="viewport" content="width=device-width, initial-scale=1.0">
 								
 								<script>
 												
@@ -57,19 +61,39 @@
 								</script>
 								
 								<style>
-												h1, h2, h3 {
+												body {
+																background-color: #000000;
+												}
+									
+									
+												h1, h2, h3, p, div {
+																color: #ffffff;
 																text-align: center;
 												}
+												
+												p {
+																margin-top: 50px;
+												}
+															
+												button {
+																display: block;
+																margin: 0 auto;
+																width: 100px;
+																height: 35px;
+																border-radius: 20px;
+																background-color: #333333;
+																color: #ffffff;
+												}		
 																			
 								</style>
 				</head>			
 				
 				<body>
 								<h1>Seja Bem Vindo!</h1>
-								<hr/>
+								<hr align="right" width="90%"/>
 								
 								<h3>Em quem deseja votar?</h3>
-								<hr/>
+								<hr align="left" width="90%" />
 								
 								<p>Joao</p>
 								<button onclick="votarNoJoao()">Votar</button>														
@@ -87,12 +111,16 @@
 								
 								<p>Jeová</p>
 								<button onclick="votarNoJeova()">Votar</button>			
-								<div style="width: 0px; height: 5px; margin-top: 5px; background-color: 0000ff; text-align: right; transition:width 0.5s; border-radius: 15px;" id="barraJeova">
+								<div style="width: 0px; height: 5px; margin-top: 5px; background-color: #0000ff; text-align: right; transition:width 0.5s; border-radius: 15px;" id="barraJeova">
 												0%
 								</div>
 								
-								<h2 id="total">Votos Totais: </h2>
+								<h2 style="margin-top: 70px;" id="total">Votos Totais: </h2>
 								
 				</body>
+				
+				<footer style="margin-top: 20px">
+								<p>&copy RyuZypher</p>
+				</footer>
 </html>
 				
